@@ -1,0 +1,25 @@
+<div class="dialog-content">
+  <h2 class="dialog-title">ID: {{ digimon.id }}</h2>
+  <h3 class="dialog-title">{{ digimon.name }}</h3>
+  <img [src]="digimon.image" alt="Imagen" class="section" width="250" height="258"/>
+  <div class="sections">
+    <div class="section">
+      <h4>Level</h4>
+      <p>{{ digimon.level }}</p>
+    </div>
+    <div class="section">
+      <h4>Attribute</h4>
+      <p>{{ digimon.attribute }}</p>
+    </div>
+    <div class="section">
+      <h4>Type</h4>
+      <p>{{ digimon.type }}</p>
+    </div>
+  </div>
+  <div class="centered-row">
+    <img [src]="digimon.fieldImage" alt="{{ digimon.field }}" width="32" height="32" />
+  </div>
+  <div class="centered-row">
+    <button mat-button [mat-dialog-close]="true">Cerrar</button>
+  </div>
+</div>

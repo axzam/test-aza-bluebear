@@ -1,0 +1,38 @@
+.dialog-content {
+  font-size: 18px;
+  padding: 20px;
+  width: 400px;
+   /* Ancho del cuadro de diálogo */
+}
+
+/* Centrar los títulos */
+.dialog-title {
+  text-align: center;
+}
+
+/* Estilos para las secciones */
+.sections {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.section {
+  /* flex: 1; */
+  margin-right: 20px;
+  margin-left: 20px;
+  display: grid;
+}
+
+/* Estilos para la imagen pequeña */
+.centered-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilos para el botón de cerrar */
+.centered-row button {
+  margin-top: 20px;
+}

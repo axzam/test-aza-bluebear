@@ -1,0 +1,25 @@
+<div class="container responsive-grid">
+    <mat-card *ngFor="let card of displayedCards">
+        <mat-card-header>
+          <mat-card-title>{{ card.name }} </mat-card-title>
+        </mat-card-header>
+        <br />
+        <img mat-card-image [src]="card.image" />
+        <mat-card-actions>
+            <button  mat-raised-button  (click)="openMe(card.id)"  color="primary">Detalles</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
+
+<div class="container" >
+<div class="pagination">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-secondary" (click)="previousPage()" [attr.disabled]="currentPage === 1 ? 'disabled' : null">Anterior</button>
+        </div>
+        <div class="col-md-auto col-sm-auto">
+            <button class="btn btn-primary" (click)="nextPage()" [attr.disabled]="currentPage === totalPages ? 'disabled' : null">Siguiente</button>
+        </div>
+    </div>
+  </div>
+</div>
